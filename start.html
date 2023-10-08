@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Here</title>
+    <!-- ========================================== Google Font start ======================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- ========================================== Google Font End ========================================== -->
+
+<!-- ========================================== Box icon start ========================================== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- ========================================== Box icon End ========================================== -->
+
+<!-- ========================================== CSS Link ================================================ -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="start_point">
+
+    <!-- ======================================= Player One Start ========================================== -->
+    <div id="player_One" class="player">
+        <div class="text">
+            <h3>Player No.01</h3>
+            <p>Select No. (0 - 9)</p>
+        </div>
+        <input id="player_one_input" type="number" placeholder="Enter the number">
+        <p id="player_One_error" class="error"></p>
+        <button id="player_one_btn">Start</button>
+    </div>
+        <!-- ======================================= Player One End ========================================== -->
+
+            <!-- ======================================= Player Two Start ========================================== -->
+    <div id="player_Two" class="player">
+        <div class="text">
+            <h3>Player No.02</h3>
+            <p>Select the Previous No.</p>
+        </div>
+        <input id="player_Two_input" type="number" placeholder="Enter the number">
+
+        <div class="life_section">
+            <div class="text">
+                <h4>You Have: </h4>
+            </div>
+            <div id="live_section" class="icons">
+                <i class='bx bxs-heart-circle first' id="red"></i>
+                <i class='bx bxs-heart-circle second' id="orange"></i>
+                <i class='bx bxs-heart-circle third' id="green"></i>
+            </div>
+        </div>
+        <button id="player_Tow_btn">Finish</button>
+    </div>
+        <!-- ======================================= Player Two End ========================================== -->
+
+        <!-- =========================================== Javascript Link ======================================= -->
+        <script src="main.js"></script>
+</body>
+</html>

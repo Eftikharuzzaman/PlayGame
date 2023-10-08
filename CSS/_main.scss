@@ -1,0 +1,132 @@
+.start_point{
+    height: 100vh;
+    background: url(../Img/startpoint02.jpg)no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(77, 75, 75, 0.521);
+        z-index: -1;
+    }
+}
+.player{
+    width: 35%;
+    padding: 40px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background: #ffffff;
+    flex-direction: column;
+
+    .text{
+        h3{
+            color: black;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: end;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ff3f34;
+            margin-bottom: 10px;
+        }
+    }
+    input{
+        width: 100%;
+        padding: 10px 10px;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        outline: none;
+        border: 2px solid #6ab04c;
+        border-radius: 10px;
+        color: #1e90ff;
+        margin-bottom: 10px;
+        transition: 0.3s all linear;
+
+        &:hover{
+            background: #ffdd59;
+            color: #1e272e;
+            border: 2px solid #ff3f34;
+        }
+    }
+    .life_section{
+        display: flex;
+        align-items: center;
+
+        .text{
+            h4{
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        .icons{
+            margin-bottom: 10px;
+            i{
+                font-size: 30px;
+                cursor: pointer;  
+                border-radius: 50%;
+            }
+            .first{
+                color: #ff3f34;
+                background: #ffffff;
+            }
+            .second{
+                color: #e67e22;
+                background: #ffffff;
+            }
+            .third{
+                color: #2ecc71;
+                background: #ffffff;
+            }
+        }
+    }
+
+
+
+
+
+    .error{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: end;
+        margin-bottom: 12px;
+        margin-right: 10px;
+        color: #ff3f34;
+    }
+    button{
+        width: 50%;
+        padding: 10px 10px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 25%;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid #fff200;
+        background: #3c40c6;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.3s all linear;
+
+        &:hover{
+            background: #fff200;
+            color: #1e272e;
+            border: 2px solid #ff3f34;
+        }
+    }
+}
+#player_Two{
+    display: none;
+}

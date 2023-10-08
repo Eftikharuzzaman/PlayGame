@@ -1,0 +1,38 @@
+header{
+    background: #485460;
+}
+.win{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // &::before{
+    //     content: '';
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     position: absolute;
+    //     background: rgba(53, 51, 51, 0.822);
+    //     // z-index: -1;
+    // }
+
+    .win_section{
+        button{
+            display: flex;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            outline: none;
+            border: 2px solid #ff3838;
+            cursor: pointer;
+
+            a{
+                color: #1e272e;
+                font-weight: 600;
+            }
+        }
+    }
+}

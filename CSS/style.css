@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.win {
+  height: 100vh;
+  background: url(../Img/win.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.loss {
+  height: 100vh;
+  background: url(../Img/loss01.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.notification {
+  height: 400px;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 100;
+}
+header #main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+header #main .logo {
+  width: 20%;
+  height: 100%;
+}
+header #main .logo a {
+  line-height: 85px;
+}
+header #main .logo a img {
+  height: 70px;
+}
+header #main .menu {
+  width: 50%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #main .menu ul {
+  display: flex;
+  line-height: 85px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+header #main .menu ul li {
+  display: inline-block;
+}
+header #main .menu ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s all linear;
+  position: relative;
+}
+header #main .menu ul li a:hover {
+  color: #ffdd59;
+}
+header #main .menu ul li a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  top: 60px;
+  position: absolute;
+  background: #ffdd59;
+  transition: 0.3s all linear;
+}
+header #main .menu ul li a:hover::before {
+  width: 100%;
+}
+header #main .button {
+  width: 20%;
+}
+header #main .button .home_btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid #ffdd59;
+  transition: 0.3s all linear;
+}
+header #main .button .home_btn:hover {
+  background: #ffdd59;
+  border: 2px solid #ff3f34;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../Img/hero.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  padding-top: 10%;
+}
+#hero p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #44bd32;
+}
+#hero h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+#hero h1 span {
+  display: block;
+}
+#hero .btn_hro {
+  padding: 13px 25px;
+  margin-top: 10px;
+  border: 2px solid red;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: #fffa65;
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+#hero .btn_hro a {
+  color: #1e272e;
+}
+#hero .btn_hro:hover {
+  background: #ffffff;
+  color: #1e272e;
+}
+
+.start_point {
+  height: 100vh;
+  background: url(../Img/startpoint02.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start_point::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(77, 75, 75, 0.521);
+  z-index: -1;
+}
+
+.player {
+  width: 35%;
+  padding: 40px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: #ffffff;
+  flex-direction: column;
+}
+.player .text h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.player .text p {
+  text-align: end;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff3f34;
+  margin-bottom: 10px;
+}
+.player input {
+  width: 100%;
+  padding: 10px 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #6ab04c;
+  border-radius: 10px;
+  color: #1e90ff;
+  margin-bottom: 10px;
+  transition: 0.3s all linear;
+}
+.player input:hover {
+  background: #ffdd59;
+  color: #1e272e;
+  border: 2px solid #ff3f34;
+}
+.player .life_section {
+  display: flex;
+  align-items: center;
+}
+.player .life_section .text h4 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.player .life_section .icons {
+  margin-bottom: 10px;
+}
+.player .life_section .icons i {
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.player .life_section .icons .first {
+  color: #ff3f34;
+  background: #ffffff;
+}
+.player .life_section .icons .second {
+  color: #e67e22;
+  background: #ffffff;
+}
+.player .life_section .icons .third {
+  color: #2ecc71;
+  background: #ffffff;
+}
+.player .error {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: end;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  color: #ff3f34;
+}
+.player button {
+  width: 50%;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 25%;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid #fff200;
+  background: #3c40c6;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.player button:hover {
+  background: #fff200;
+  color: #1e272e;
+  border: 2px solid #ff3f34;
+}
+
+#player_Two {
+  display: none;
+}
+
+header {
+  background: #485460;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.win .win_section button {
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #ff3838;
+  cursor: pointer;
+}
+.win .win_section button a {
+  color: #1e272e;
+  font-weight: 600;
+}
+
+header {
+  background: #485460;
+}
+
+.loss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loss::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(53, 51, 51, 0.822);
+  z-index: -1;
+}
+.loss .loss_section button {
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #ff3838;
+  cursor: pointer;
+}
+.loss .loss_section button a {
+  color: #1e272e;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
